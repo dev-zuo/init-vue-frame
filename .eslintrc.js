@@ -8,8 +8,13 @@ module.exports = {
     parser: "babel-eslint",
   },
   rules: {
-    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
+    // "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
+    "no-console":  "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+    // "semi": "off",
+    // "semi": ["off", "always"],
+    // "indent": ["error", 4],
+    // "quotes": [2, 'single'] // 强制单引号， prittier 默认要双引号引号，冲突
   },
   overrides: [
     {
